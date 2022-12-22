@@ -8,15 +8,15 @@ const alumns = [
     {name: 'Alfredo Blanco', T1: false, T2: false, T3: false}, 
     {name: 'Raquel Benito', T1: true, T2: true, T3: true}
 ]
-let ifApproved = 0
-for (let index = 0; index < alumns.length; index++) {
-    const eachAlumns = alumns[index];
-    if (eachAlumns.T1 === true && eachAlumns.T2 === true || eachAlumns.T3 === true && eachAlumns.T2 === true || eachAlumns.T3 === true && eachAlumns.T1 === true){
-        
 
-        console.log(eachAlumns);
-        
-        
-    }
-    
+for (let index = 0; index < alumns.length; index++) {
+    const eachAlumn = alumns[index];
+    let approvedCount = 0;
+    approvedCount = eachAlumn.T1 ? approvedCount + 1 : approvedCount;
+    approvedCount = eachAlumn.T2 ? approvedCount + 1 : approvedCount;
+    approvedCount = eachAlumn.T3 ? approvedCount + 1 : approvedCount;
+
+    eachAlumn.isApproved = approvedCount >= 2;
 }
+
+console.log(eachAlumn);

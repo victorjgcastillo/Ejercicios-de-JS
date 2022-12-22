@@ -1,6 +1,7 @@
-//Añade 2 elementos al array: "Morty" y "Summer". Muestra en consola el último personaje del array
+//Elimina el último elemento del array y muestra el primero y el último por consola.
 
-const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
-rickAndMortyCharacters.push("Morty", "Summer");
+const RickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
 
-console.log(rickAndMortyCharacters[rickAndMortyCharacters.length-1])
+RickAndMortyCharacters.pop()
+
+console.log(RickAndMortyCharacters[0], RickAndMortyCharacters[RickAndMortyCharacters.length - 1]);
