@@ -14,14 +14,16 @@ let bigMovie = []
 for (let index = 0; index < movies.length; index++) {
     const eachMovie = movies[index];
     if (eachMovie.durationInMinutes < 100) {
-        smallMovie.push(eachMovie)
-    } else if(eachMovie.durationInMinutes >= 100 || eachMovie.durationInMinutes < 200 ) {
-        mediumMovie.push(eachMovie)
-    }else {
-        bigMovie.push(eachMovie)
+        smallMovie.push('pelicula pequeña: ' , eachMovie)
+    } else if(eachMovie.durationInMinutes >= 100 && eachMovie.durationInMinutes < 200 ) {
+        mediumMovie.push('pelicula mediana: ', eachMovie)
+    }else{
+        bigMovie.push('pelicula grande: ', eachMovie)
     }
     
     
 }
 
 console.log(smallMovie)
+console.log(mediumMovie)
+console.log(bigMovie)

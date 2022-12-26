@@ -2,8 +2,7 @@
 
 const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar']
 
-for (let index = 0; index < placesToTravel.length; index++) {
-    const city = placesToTravel[index];
-    console.log(city)
+for (const object of placesToTravel) {
+    console.log(object);
     
 }

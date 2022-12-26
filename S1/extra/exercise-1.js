@@ -10,9 +10,9 @@ const users = [
 for (let index = 0; index < users.length; index++) {
     const user = users[index];
     if (user.years < 18) {
-        console.log("Usuario menor de edad " + user.name)
+        console.log("Usuario menor de edad ", user.name)
     } else {
-        console.log("Usuario mayor de edad " + user.name)
+        console.log("Usuario mayor de edad ", user.name)
     }
     
 }

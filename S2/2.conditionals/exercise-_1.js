@@ -11,12 +11,18 @@ const alumns = [
 
 for (let index = 0; index < alumns.length; index++) {
     const eachAlumn = alumns[index];
-    let approvedCount = 0;
-    approvedCount = eachAlumn.T1 ? approvedCount + 1 : approvedCount;
-    approvedCount = eachAlumn.T2 ? approvedCount + 1 : approvedCount;
-    approvedCount = eachAlumn.T3 ? approvedCount + 1 : approvedCount;
+//    if(element.T1 === true && element.T2 === true || element.T3 === true){
+//    console.log('alumno aprobado', element);
+//    }
 
-    eachAlumn.isApproved = approvedCount >= 2;
+// otra manera
+
+    let trimestreApproved = 0;
+    trimestreApproved = eachAlumn.T1 ? trimestreApproved + 1 : trimestreApproved;
+    trimestreApproved = eachAlumn.T2 ? trimestreApproved + 1 : trimestreApproved;
+    trimestreApproved = eachAlumn.T3 ? trimestreApproved + 1 : trimestreApproved;
+
+    eachAlumn.trimestreApproved =  trimestreApproved >= 2;
+
 }
-
-console.log(eachAlumn);
+console.log(alumns);

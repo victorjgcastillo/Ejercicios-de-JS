@@ -1,4 +1,4 @@
-//Dado el siguiente javascript usa forof para recorrer el array de películas, genera un nuevo array con las categorías de las películas e imprime por consola el array de categorías. Ten en cuenta que las categorías no deberían repetirse. Para filtrar las categorías puedes ayudarte de la función `.includes()`.
+//Dado el siguiente javascript usa for of para recorrer el array de películas, genera un nuevo array con las categorías de las películas e imprime por consola el array de categorías. Ten en cuenta que las categorías no deberían repetirse. Para filtrar las categorías puedes ayudarte de la función `.includes()`.
 
 const movies = [
     {title: 'Madaraspar', duration: 192, categories: ['comedia', 'aventura']},
@@ -7,14 +7,7 @@ const movies = [
     {title: 'El gato con guantes', duration: 111, categories: ['comedia', 'aventura', 'animación']},
 ]
 
-const categories = [];
-for (const movie of movies) {
-    for (const category of movie.categories) {
-        if (!categories.includes(category)) {
-            categories.push(category);
-        }
-    }
-
+let categories = []
+for (const iterator of movies) {
+    if
 }
-
-console.log(categories);

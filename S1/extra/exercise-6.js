@@ -17,6 +17,6 @@ for (let index = 0; index < products.length; index++) {
     }   
 }
 
-console.log(goodProducts)
-console.log(badProducts)
+console.log('buenos productos', goodProducts)
+console.log('malos productos', badProducts)
 

@@ -6,11 +6,12 @@ const products = [
     {name: 'Reloj de papel albal', sellCount: 23},
     {name: 'Inpar de zapatos', sellCount: 6}];
 
-    let suma = 0
+let suma = 0
 
-    for (let index = 0; index < products.length; index++) {
-        const eachProduct = products[index];
-            suma += eachProduct.sellCount
-         
-        }
-        console.log(suma);
+for (let index = 0; index < products.length; index++) {
+    const element = products[index];
+    suma += element.sellCount;
+    
+}
+
+console.log(suma);

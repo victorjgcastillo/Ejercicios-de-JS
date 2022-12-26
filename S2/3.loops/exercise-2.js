@@ -8,8 +8,8 @@ const alien = {
 }
 
 for (const key in alien) {
-    if (alien.hasOwnProperty.call(alien, key)) {
+    if (Object.hasOwnProperty.call(alien, key)) {
         const element = alien[key];
-        console.log(element);
+        
     }
-}
+}console.log('Datos del alienigena: ',alien);

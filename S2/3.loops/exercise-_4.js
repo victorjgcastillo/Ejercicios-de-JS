@@ -7,12 +7,13 @@ const toys = [
     {id: 40, name: 'El gato con Guantes'},
     {id: 40, name: 'El gato felix'}]
 
-for (var index of toys) {
-    function toysWithCats(index) {
-        index.includes("gato")
-        
-    }
-    
-}
 
-toysWithCats(toys)
+    for (const object of toys){
+        if (object.name.includes('gato')) {
+            toys.splice(object , 1)
+        }
+    }
+
+console.log(toys);
+
+//no logro quitar los objetos que contienen "gato"

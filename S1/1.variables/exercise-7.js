@@ -9,3 +9,6 @@ globalBasePrice = 25000;
 
 car1.finalPrice = globalBasePrice + car1.basePrice;
 car2.finalPrice = globalBasePrice + car2.basePrice;
+
+console.log(car1);
+console.log(car2);

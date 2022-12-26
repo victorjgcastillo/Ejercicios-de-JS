@@ -40,28 +40,3 @@ const users = [
     },
 ]
 
-const favoritesSounds = [];
-
-
-for (const user of users) {
-    for (const key in user.favoritesSounds) {
-        if (favoritesSounds.length) {
-            let favoriteSoundIsInside = false;
-            for (const favoriteSound of favoritesSounds) {
-                if(favoriteSound.name === key){
-                    favoriteSoundIsInside = true;
-                    favoriteSound.count++;
-                    break;
-                }
-            }
-
-            if(!favoriteSoundIsInside){
-                favoritesSounds.push({name: key, count: 1})
-            }
-        } else{
-            favoritesSounds.push({name: key, count: 1})
-        }
-    }
-}
-
-console.log(favoritesSounds)

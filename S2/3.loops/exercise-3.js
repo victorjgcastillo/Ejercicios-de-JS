@@ -8,20 +8,12 @@ const placesToTravel = [
     {id: 44, name: 'Filipinas'}, 
     {id: 59, name: 'Madagascar'}]
 
-    for (let index = 0; index < placesToTravel.length; index++) {
-        const City = placesToTravel[index];
-        if (City.id === 11 && City.id === 40) {
-           placesToTravel.splice(index,1) 
-
-        }
-        }
-        console.log(placesToTravel);
-        
-        
     
-
-
-        
-        
-        
-        
+    for (let index = 0; index < placesToTravel.length; index++) {
+        const places = placesToTravel[index];
+        if (places.id === 11 || places.id === 40) {
+            placesToTravel.splice(index, 1);
+        }
+    }
+   
+    console.log(placesToTravel);

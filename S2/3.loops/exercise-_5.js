@@ -10,10 +10,13 @@ const toys =
 {id: 40, name: 'El gato con Guantes', sellCount: 8},
 {id: 40, name: 'El gato felix', sellCount: 35}]
 
-for (const eachToy of toys) {
-    eachToy.sellCount > 15
-    popularToys.push(eachToy)
+for (const iterator of toys) {
+    if (iterator.sellCount > 15) {
+        popularToys.push()
+        console.log(iterator);
+    }
     
-
 }
-console.log(popularToys)
+console.log(popularToys);
+
+// NO LOGRO METERLO AL ARRAY DE POPULAR TOYS
