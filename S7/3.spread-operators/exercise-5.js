@@ -1,8 +1,8 @@
-const colors = ['rojo', 'azul', 'amarillo', 'verde', 'naranja'];
+//Dado el siguiente array. Crear una copia de él eliminando la posición 2 pero sin editar el array inicial. De nuevo, usando spread operatos.
 
-const colorsCopy = [...colors]; 
-colorsCopy.splice(2,1);
 
-console.log(colors);
-console.log(colorsCopy); // ['rojo', 'azul', 'verde', 'naranja'];
+const colors = ['rojo', 'azul', 'amarillo', 'verde', 'naranja']; 
 
+const copyColors = [...colors]
+copyColors.splice(1,1)
+console.log(copyColors);
