@@ -7,7 +7,14 @@ const movies = [
     {title: 'El gato con guantes', duration: 111, categories: ['comedia', 'aventura', 'animación']},
 ]
 
-let categories = []
-for (const iterator of movies) {
-    if
+const categories = [];
+for (const movie of movies) {
+    for (const category of movie.categories) {
+        if (!categories.includes(category)) {
+            categories.push(category);
+        }
+    }
+
 }
+
+console.log(categories);

@@ -8,12 +8,15 @@ const toys = [
     {id: 40, name: 'El gato felix'}]
 
 
-    for (const object of toys){
-        if (object.name.includes('gato')) {
-            toys.splice(object , 1)
+const funcionToys = (array) =>{
+    let toysWithCat = [];
+    for (const object of array){
+        if (!object.name.includes('gato')) {
+            toysWithCat.push(object)
         }
     }
+    return toysWithCat;
+}
 
-console.log(toys);
-
-//no logro quitar los objetos que contienen "gato"
+const toysWithoutCat = funcionToys(toys)
+console.log(toysWithoutCat);

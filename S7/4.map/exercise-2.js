@@ -2,6 +2,14 @@
 
 const users = [{id: 1, name: 'Abel'}, {id:2, name: 'Julia'},{id:3, name: 'Pedro'}, {id:4, name: 'Amanda'}];
 
-const userName = users.map(user => user.name[0]=== 'A'? 'Anacleto' : user.name)
+//const userName = users.map(user => user.name[0]=== 'A'? 'Anacleto' : user.name) //Otra manera de hacerlo
 
-console.log(userName);
+const userName = users.map( user =>{
+    if (user.name[0] === 'A') {
+        user.name === 'Anacleto'
+        console.log(user);
+        
+    }
+    return user
+})
+

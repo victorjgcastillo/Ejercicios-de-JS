@@ -1,4 +1,4 @@
-//Dado el siguiente javascript usa forof y forin para hacer la media del volumen de todos los sonidos favoritos que tienen los usuarios.
+//Dado el siguiente javascript usa for of y for in para hacer la media del volumen de todos los sonidos favoritos que tienen los usuarios.
 
 
 const volumeInfo = { totalVolume: 0, totalCount: 0 };
@@ -38,3 +38,13 @@ const users = [
     },
 ]
 
+for (const iterator of users) {
+    for (const key in iterator.favoritesSounds) {
+        const favoriteSound = iterator.favoritesSounds[key];
+        volumeInfo.totalVolume += favoriteSound.volume;
+        volumeInfo.totalCount++;
+            
+        }
+    }
+    
+    console.log('El volumen medio de los sonidos favoritos es de: ' + volumeInfo.totalVolume / volumeInfo.totalCount)

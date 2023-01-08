@@ -12,11 +12,8 @@ const toys =
 
 for (const iterator of toys) {
     if (iterator.sellCount > 15) {
-        popularToys.push()
-        console.log(iterator);
+        popularToys.push(iterator);
     }
     
 }
-console.log(popularToys);
-
-// NO LOGRO METERLO AL ARRAY DE POPULAR TOYS
+console.log('juguetes populares' , popularToys);
